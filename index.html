@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recicla Salvador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+
+<header>
+    <div class="logo">♻ Recicla Salvador</div>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#pontos">Pontos de Coleta</a>
+        <a href="#educacao">Educação Ambiental</a>
+        <a href="#sobre">Sobre</a>
+    </nav>
+    <button id="darkModeBtn">
+    <i class="fa-solid fa-moon"></i>
+</button>
+</header>
+
+<section id="inicio" class="hero">
+
+    <div class="hero-text">
+        <h1>Encontre pontos de reciclagem perto de você</h1>
+
+        <p>
+            Localize ecopontos e centros de reciclagem em Salvador.
+            Ajude a preservar o meio ambiente e descarte corretamente seus resíduos.
+        </p>
+
+        <button>Explorar Mapa</button>
+    </div>
+
+    <div class="hero-image">
+        ♻
+    </div>
+
+</section>
+
+<section id="pontos" class="map-section">
+
+    <h2>Pontos de Coleta em Salvador</h2>
+
+    <div id="map"></div>
+
+</section>
+
+<section class="cards">
+
+    <h2>Pontos em Destaque</h2>
+
+    <div class="card-grid">
+
+        <div class="card">
+            <h3>Ecoponto Itaigara</h3>
+            <p>Recebe papel, plástico, vidro e metal.</p>
+        </div>
+
+        <div class="card">
+            <h3>Coleta Seletiva UFBA</h3>
+            <p>Descarte de materiais recicláveis.</p>
+        </div>
+
+        <div class="card">
+            <h3>Ecoponto Rio Vermelho</h3>
+            <p>Atendimento à comunidade.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="educacao" class="info">
+
+    <h2>Impacto da Reciclagem</h2>
+
+    <div class="stats">
+
+        <div>
+            <h3>21</h3>
+            <p>Árvores preservadas</p>
+        </div>
+
+        <div>
+            <h3>20 mil</h3>
+            <p>Litros de água economizados</p>
+        </div>
+
+        <div>
+            <h3>95%</h3>
+            <p>Economia de energia</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="education">
+
+    <h2>O que pode ser reciclado?</h2>
+
+    <div class="materials">
+
+        <div>Papel</div>
+        <div>Plástico</div>
+        <div>Vidro</div>
+        <div>Metal</div>
+        <div>Eletrônicos</div>
+
+    </div>
+
+</section>
+
+<section class="suggestion">
+
+    <h2>Sugerir Novo Ponto de Coleta</h2>
+
+    <form id="suggestForm">
+
+        <input
+            type="text"
+            id="nome"
+            placeholder="Nome do local"
+            required
+        >
+
+        <input
+            type="text"
+            id="bairro"
+            placeholder="Bairro"
+            required
+        >
+
+        <textarea
+            id="descricao"
+            placeholder="Quais materiais são aceitos?"
+            required
+        ></textarea>
+
+        <button type="submit">
+            Enviar Sugestão
+        </button>
+
+    </form>
+
+</section>
+
+<section id="sobre" class="about">
+
+    <h2>Sobre o Projeto</h2>
+
+    <p>
+        O Recicla Salvador é um projeto de extensão desenvolvido
+        para promover a educação ambiental e facilitar o acesso
+        da população aos pontos de coleta seletiva da cidade.
+
+        A plataforma integra tecnologia, sustentabilidade e
+        cidadania ambiental, contribuindo para o descarte correto
+        de resíduos sólidos e para a preservação do meio ambiente.
+    </p>
+
+</section>
+
+<footer>
+
+    <h3>Recicla Salvador</h3>
+
+    <p>
+        Projeto de Extensão – Ciência da Computação e Direito Ambiental
+        <br>
+        João Vitor de Almeida Lima
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+</body>
+</html>
